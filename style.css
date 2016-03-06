@@ -143,6 +143,24 @@ li a:hover:not(.active) {
     margin: 25px;
 }
 
+.gallery-item.contact {
+    border-style:none;
+    transition: opacity 0.75s ease;
+}
+
+.contact-container {
+    padding-bottom:0px;
+}
+
+.contact-text {
+   
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #00BCD4;
+}
+
 .image-text {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -187,11 +205,19 @@ li a:hover:not(.active) {
     cursor: pointer;
 }
 
+.gallery-item.contact:hover {
+    background-color: white;
+    opacity: 0.4;
+}
+
 .project-item:hover {
     opacity: 0.6;
     cursor:pointer;
 }
 
+a.contact-link {
+    text-decoration: none;
+}
 
 /*
 * {

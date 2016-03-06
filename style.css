@@ -114,26 +114,33 @@ li a:hover:not(.active) {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: white;
+    /*
     margin-right: 5%;
     margin-left: 5%;
-    
+    */
+    /*
+    margin: 5px;
+    */
+}
+
+.row .projects {
 
 }
 
-
 .gallery-item {
     min-width: 30%;
-    height: 250px;
+    height: 300px;
     flex: 2;
-    border-style: ridge;
+    border-style: dashed;
     border-color: #00BCD4;
+    border-width: 3px;
     box-sizing: border-box;
     text-align: center;
-    margin: 25px;
     transition: background-color 0.5s ease;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 25px;
 }
 
 .image-text {
@@ -143,22 +150,46 @@ li a:hover:not(.active) {
 }
 
 .project-item {
-    min-width:80%;
-    height:250px;
+    min-width:40%;
+    height:400px;
     flex: 1;
-    background-color: #AAA;
+    background-color: #00BCD4;
     border-style: ridge;
     border-color: white;
     box-sizing: border-box;
     text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity 0.75s ease;
+    margin: 25px;
+
+}
+
+.project-text-header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.project-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    /*padding: 30px;*/
 
 }
 
 .gallery-item:hover {
     background-color: #00BCD4;
     cursor: pointer;
+}
+
+.project-item:hover {
+    opacity: 0.6;
+    cursor:pointer;
 }
 
 
@@ -199,10 +230,15 @@ li a:hover:not(.active) {
 */
 
 @media (min-width: 1530px) {
+
     .project-item {
-        min-width: 30%;  
+        min-width: 40%;  
         margin: 10px;
 
+    }
+
+    .desc {
+        min-width:25%;
     }
 
     .gallery-item {
@@ -214,10 +250,11 @@ li a:hover:not(.active) {
 
 @media (max-width: 776px) {
    
-   
     .project-item {
-        min-width: 45%;  
-        margin: 10px;
+        min-width: 50%;  
+        margin: 10%;
+        margin-top: 15px;
+        margin-bottom: 15px;
 
     }
 

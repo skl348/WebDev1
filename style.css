@@ -123,8 +123,9 @@ li a:hover:not(.active) {
     */
 }
 
-.row .projects {
-
+.row.about-me-row {
+    margin-left:30%;
+    margin-right:30%;
 }
 
 .gallery-item {
@@ -186,13 +187,38 @@ li a:hover:not(.active) {
 
 }
 
+.about-me-item {
+    min-width:40%;
+    height:400px;
+    flex: 1;
+    background-color: #00BCD4;
+    display:flex;
+    flex-direction: row;
+
+    background-color:white;
+    border-style:none;
+    color:#333;
+    margin-top:25px;
+}
+
+.about-me-text {
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: left;
+}
+.about-me-text.right{
+    padding-left:20px;
+}
+
 .project-text-header {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 30px;
 }
 
-.project-text {
+.project-text{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 25px;
@@ -219,48 +245,13 @@ a.contact-link {
     text-decoration: none;
 }
 
-/*
-* {
-    box-sizing: border-box;
-}
 
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-    border: 1px solid red;
-    height: 250px;
-}
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-.col-gutter {
-    width: 6.25%; 
-    visibility: hidden;
-}
-.col-emptyrow {
-    width: 100%;
-    visibility:hidden;
-    height: 75px;
-}
-
-*/
 
 @media (min-width: 1530px) {
 
     .project-item {
         min-width: 40%;  
         margin: 10px;
-
     }
 
     .desc {
@@ -272,6 +263,18 @@ a.contact-link {
         margin: 15px;
 
     }
+}
+
+@media(max-width: 1375px) {
+    .about-me-item {
+        min-width:50%;
+        margin:20px;
+        height:inherit;
+    }
+    .about-me-text.right {
+        padding-left:0px;
+    }
+
 }
 
 @media (max-width: 776px) {
@@ -311,15 +314,6 @@ a.contact-link {
         display:block;
     }
 
-    /*
-
-    .col-gutter {
-        width: 25%;
-    }
-    .col-3 {
-        width: 50%;
-    }
-    */
 
 
 }

@@ -1,0 +1,154 @@
+
+
+body {
+    margin: 0;
+    background-color: #FFF;
+}
+
+
+.nav-bar {
+    margin: 0;
+    padding-left: 8%;
+    overflow: hidden;
+    background-color: #333;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: monospace;
+    font-family: 'PT Sans', monospace;
+    font-weight: 400;
+    font-size: 28px;
+
+}
+/*
+li {
+    float:left;
+}
+*/
+
+.nav-bar ul {
+    display:inline;
+}
+
+.nav-bar li {
+    display: inline;
+}
+.nav-bar li a {
+    /*display: block;*/
+    color: white;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration:none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+
+.active {
+    background-color: #00BCD4;
+
+}
+
+.logo {
+    width:100%;
+    height: 150px;
+    color: white;
+    font-family: monospace;
+    font-size: 40px;
+    background-color: #727272;
+
+}
+
+
+
+.intro-container {
+    
+    background-color: #00BCD4;
+    /*background-color: white;*/
+}
+
+.intro-statement {
+    padding: 50px 0px;
+    margin-left: 9%;
+    font-size: 60px;
+    /*font-family: monospace;*/
+    font-family: 'PT Sans', sans-serif;
+
+    font-weight: 700;
+    color: white;
+    /*color: #00BCD4*/
+}
+
+.content-container {
+}
+
+.content {
+    margin-left: 9%;
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333;
+
+}
+
+.row {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: white;
+    margin-right: 5%;
+    margin-left: 5%;
+
+}
+
+
+.gallery-item {
+    min-width: 80%;
+    height: 250px;
+    flex: 1;
+    background-color: #00BCD4;
+    border-style: ridge;
+    border-color: white;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.project-item {
+    min-width:80%;
+    height:250px;
+    flex: 1;
+    background-color: #AAA;
+    border-style: ridge;
+    border-color: white;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+
+@media (min-width: 775px) {
+   
+    .project-item {
+        min-width: 45%;  
+        margin: 10px;
+
+    }
+
+    .gallery-item {
+        min-width: 25%;  
+        margin: 15px;
+
+    }
+
+
+}

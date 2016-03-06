@@ -19,36 +19,22 @@ body {
     font-size: 28px;
 
 }
-/*
-li {
-    float:left;
-}
-*/
+
 
 .nav-bar ul {
     display:inline;
 }
 
 .nav-bar li {
-    /*display: inline;*/
     float: left;
     list-style-type: none;
-    /* enable only these in small mode
-    display:block;
-    list-style-type: none;
-    */
 }
 .nav-bar li a {
-    /*display: block;*/
     color: white;
     text-align: center;
     padding: 8px 16px;
     text-decoration:none;
     display:inline;
-    /*
-    enable only these in small mode
-    display:block;
-    */
 }
 
 li a:hover:not(.active) {
@@ -76,19 +62,16 @@ li a:hover:not(.active) {
 .intro-container {
     
     background-color: #00BCD4;
-    /*background-color: white;*/
 }
 
 .intro-statement {
     padding: 50px 0px;
     margin-left: 9%;
     font-size: 60px;
-    /*font-family: monospace;*/
     font-family: 'PT Sans', sans-serif;
 
     font-weight: 700;
     color: white;
-    /*color: #00BCD4*/
 }
 
 .content-container {
@@ -114,13 +97,6 @@ li a:hover:not(.active) {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: white;
-    /*
-    margin-right: 5%;
-    margin-left: 5%;
-    */
-    /*
-    margin: 5px;
-    */
 }
 
 .row.about-me-row {
@@ -222,7 +198,6 @@ li a:hover:not(.active) {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 25px;
-    /*padding: 30px;*/
 
 }
 

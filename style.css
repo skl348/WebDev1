@@ -111,6 +111,7 @@ li a:hover:not(.active) {
     border-style: dashed;
     border-color: #00BCD4;
     border-width: 3px;
+    border-radius:15px;
     box-sizing: border-box;
     text-align: center;
     transition: background-color 0.5s ease;
@@ -198,6 +199,8 @@ li a:hover:not(.active) {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 25px;
+    margin-left:15%;
+    margin-right:15%;
 
 }
 
@@ -226,11 +229,7 @@ a.contact-link {
 
     .project-item {
         min-width: 40%;  
-        margin: 10px;
-    }
-
-    .desc {
-        min-width:25%;
+        margin: 15px;
     }
 
     .gallery-item {

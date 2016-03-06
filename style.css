@@ -103,7 +103,9 @@ li a:hover:not(.active) {
 
 }
 
+
 .row {
+    
     display: flex;
     display: -webkit-flex;
     flex-direction:row;
@@ -114,22 +116,30 @@ li a:hover:not(.active) {
     color: white;
     margin-right: 5%;
     margin-left: 5%;
+    
 
 }
 
 
 .gallery-item {
-    min-width: 80%;
+    min-width: 30%;
     height: 250px;
-    flex: 1;
-    background-color: #00BCD4;
+    flex: 2;
     border-style: ridge;
-    border-color: white;
+    border-color: #00BCD4;
     box-sizing: border-box;
     text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 25px;
+    transition: background-color 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.image-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
 }
 
 .project-item {
@@ -146,8 +156,64 @@ li a:hover:not(.active) {
 
 }
 
+.gallery-item:hover {
+    background-color: #00BCD4;
+    cursor: pointer;
+}
+
+
+/*
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+    height: 250px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.col-gutter {
+    width: 6.25%; 
+    visibility: hidden;
+}
+.col-emptyrow {
+    width: 100%;
+    visibility:hidden;
+    height: 75px;
+}
+
+*/
+
+@media (min-width: 1530px) {
+    .project-item {
+        min-width: 30%;  
+        margin: 10px;
+
+    }
+
+    .gallery-item {
+        min-width: 30%;  
+        margin: 15px;
+
+    }
+}
 
 @media (max-width: 776px) {
+   
    
     .project-item {
         min-width: 45%;  
@@ -156,10 +222,11 @@ li a:hover:not(.active) {
     }
 
     .gallery-item {
-        min-width: 25%;  
+        min-width: 45%;  
         margin: 15px;
 
     }
+    
 
     .nav-bar {
         padding:0px;
@@ -181,18 +248,17 @@ li a:hover:not(.active) {
         display:block;
     }
 
+    /*
+
+    .col-gutter {
+        width: 25%;
+    }
+    .col-3 {
+        width: 50%;
+    }
+    */
+
 
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+
